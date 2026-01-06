@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite 11</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css" media="(max-width: 768px)">
+</head>
+<body>
+
+    <!-- Header -->
+   <header class="header">
+    <div class="logo">
+         <!-- Made in Adobe Illustrator -->
+        <img src="images/Elite 11.svg" alt="Elite 11 Logo">
+    </div>
+<!-- Header Main Features -->
+    <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="second.html">Shop</a>
+        <a href="fourth.html">About</a>
+        <a href="#">Contact us</a>
+    </nav>
+</header>
+
+
+   <!-- Main Section -->
+    <section class="hero">
+    <div class="hero-content">
+        <h1>THE BEST FOOTBALL EQUIPMENT</h1>
+       <a href="second.html"><button class="btn">SHOP NOW</button></a>
+    </div>
+</section>
+
+        <div class="hero-player"></div>
+    </section>
+
+    <section class="image-grid">
+
+    <div class="product-card">
+         <!-- (Pinterest, 2025) -->
+        <img src="images/boots.jpg" alt="Football Boots">
+        <h3>Boots</h3>
+    </div>
+
+    <div class="product-card">
+        <!-- (Pinterest, 2025) -->
+        <img src="images/balls.jpg" alt="Football Balls">
+        <h3>Balls</h3>
+    </div>
+
+    <div class="product-card">
+         <!-- (Pinterest, 2025) -->
+        <img src="images/gloves.jpg" alt="Goalkeeper Gloves">
+        <h3>Gloves</h3>
+    </div>
+
+    <div class="product-card">
+         <!-- (Pinterest, 2025) -->
+        <img src="images/accesories.jpg" alt="Football Accessories">
+        <h3>Accessories</h3>
+    </div>
+
+</section>
+
+    <!-- Free Sipping Section -->
+    <section class="shipping">
+        <h2>FREE SHIPPING</h2>
+        <p>On first order -20% off</p>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <h3>Subscribe to our newsletter</h3>
+       <div class="newsletter-box">
+    <input type="email" placeholder="Your email address">
+    <a href="subscribe.html">
+        <button class="btn">SUBSCRIBE</button>
+    </a>
+</div>
+    </section>
+
+</body>
+  <!-- Javascript code for appearing button "Shop Now" on main page-->
+<script>
+const btn = document.querySelector(".hero .btn");
+btn.style.opacity = "0";
+btn.style.transform = "translateY(15px)";
+
+setTimeout(() => {
+  btn.style.transition = "all 1s ease";
+  btn.style.opacity = "1";
+  btn.style.transform = "translateY(0)";
+}, 300);
+</script>
+</html>
